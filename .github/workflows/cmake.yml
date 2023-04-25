@@ -37,4 +37,5 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        path: *.zip 
+        name: game_dir_zip
+        path: ${{ github.workspace }}/*.zip 
