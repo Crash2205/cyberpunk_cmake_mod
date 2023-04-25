@@ -35,10 +35,12 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} --target ci_release
 
     - name: Get the release zip name
-      run: $env:MOD_ZIP_FILE = ls *.zip | % { $_.basename }
+      run: |
+        $MOD_ZIP_FILE = ls *.zip | % { $_.basename }
+        echo "MOD_ZIP_FILE=$MOD_ZIP_FILE" >> "$GITHUB_ENV"
 
     - name: Upload game_dir with zip file name
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ env.MOD_ZIP_FILE }}
+        name: ${{ env.MOD_ZIP_FILE }}.zip
         path: ${{ github.workspace }}/game_dir/**
