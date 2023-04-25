@@ -2,3 +2,5 @@ build/
 
 # ignore game_dir for a cleaner repo
 game_dir/
+
+*.zip

@@ -47,7 +47,7 @@ configure_archives(mod.archive mod.archive.xl)
 configure_tweaks(tweaks)
 
 # Release zip file location/name
-configure_release(${MOD_SOURCE_DIR}/${MOD_SLUG}_${MOD_VERSION_STR}.zip)
+configure_release(${MOD_SLUG}_${MOD_VERSION_STR}.zip)
 
 # Install game_dir to Cyberpunk game directory
 configure_install()
