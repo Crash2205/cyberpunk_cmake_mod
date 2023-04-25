@@ -34,8 +34,11 @@ jobs:
       # Build your program with the given configuration
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
+    - name: Get short SHA
+      run: echo "SHORT_SHA=$("${{ github.sha }}".SubString(0, 8))" >> $env:GITHUB_ENV
+
     - name: Upload game_dir with zip file name
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ env.MOD_ZIP_FILENAME }}
+        name: ${{ env.MOD_ZIP_FILENAME }}-${{ env.SHORT_SHA }}
         path: ${{ github.workspace }}/game_dir/**
