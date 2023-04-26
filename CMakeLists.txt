@@ -38,6 +38,10 @@ configure_inputs(inputs/${MOD_SLUG}.xml)
 # Release zip file location/name
 configure_release(${MOD_SLUG}_${MOD_VERSION_STR}.zip)
 
+# Copy readme & license to any mod folders created
+configure_folder_file(readme.md)
+configure_folder_file(license.md)
+
 # Install game_dir to Cyberpunk game directory
 configure_install()
 

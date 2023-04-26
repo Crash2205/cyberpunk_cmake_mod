@@ -2,6 +2,7 @@
     "recommendations": [
         "twxs.cmake",
         "josetr.cmake-language-support-vscode",
-        "ms-vscode.cmake-tools"
+        "ms-vscode.cmake-tools",
+        "jackhumbert.redscript-syntax-highlighting"
     ]
 }

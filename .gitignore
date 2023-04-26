@@ -1,6 +1,7 @@
+# build folder used by cmake by default
 build/
 
-# ignore game_dir for a cleaner repo
+# ignore game_dir for a cleaner repo, especially with CI integrations
 game_dir/
 
 *.zip
