@@ -19,14 +19,14 @@ This repo demonstrates the full capabilities of [Cyberpunk CMake](https://github
 5. Click the CMake icon on the left side (you can drag this to be in the same panel as your file explorer to access it more easily)
 6. Customize the project via [`CMakeLists.txt`](CMakeLists.txt)
 6. Configure the project in one of the following ways:
-    a. Click the "Configure All Projects" at the top of the CMake panel
-    b. Run the "Configure" task
-    c. Run `cmake -B build` in the terminal
-    d. Save the `CMakeLists.txt` to automatically trigger a reconfigure
+    * Click the "Configure All Projects" at the top of the CMake panel
+    * Run the "Configure" task
+    * Run `cmake -B build` in the terminal
+    * Save the `CMakeLists.txt` to automatically trigger a reconfigure
 7. Build the project in one of the following ways:
-    a. Click the "Build" button next to the `ALL_BUILD` or `project_slug` targets to build the entire project (or select a particular target to build just that and its dependencies)
-    b. Run the "Build" task
-    c. Run `cmake --build build`
+    * Click the "Build" button next to the `ALL_BUILD` or `project_slug` targets to build the entire project (or select a particular target to build just that and its dependencies)
+    * Run the "Build" task
+    * Run `cmake --build build`
         * `cmake --build build --target <target>` can be used to specify a target
 8. Commit & push your changes to your Github repo, and a CI build will be triggered, where a zip of the game_dir will be available for you to download
     * [See here for an example of what this looks like](https://github.com/jackhumbert/cyberpunk_cmake_mod/actions)
