@@ -47,3 +47,5 @@ configure_install()
 
 # Uninstall script generation
 configure_uninstall()
+
+# Test for push notification
