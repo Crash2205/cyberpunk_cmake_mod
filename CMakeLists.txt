@@ -8,9 +8,9 @@ include(CyberpunkMod)
 project(project_slug VERSION 0.0.0)
 
 configure_mod(
-  NAME "Project Name"
-  AUTHOR "Your Name"
-  URL "https://github.com/your_name/your_repo"
+  NAME "Cmake Mod Test"
+  AUTHOR "Crash2205"
+  URL "https://github.com/Crash2205/cyberpunk_cmake_mod"
   LICENSE "Licensed under the MIT license. See the license.md in the root project for details."
 )
 
